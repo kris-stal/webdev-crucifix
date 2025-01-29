@@ -1,0 +1,461 @@
+            @font-face {
+                font-family: alagard;
+                src: url(../fonts/alagard.ttf);
+            }
+            
+            body {
+                background: rgb(45, 0, 0);
+                color: rgb(200, 0, 0);
+                font-family: alagard;
+                margin: 0;
+                padding: 0;
+            }
+
+            /* header */
+            header {
+                background-color: black;
+                margin: 0px;
+            }
+
+            header img {
+                width: 100%;
+                height: 100%;
+            }
+
+            /* header logo */
+            header .logo a{
+                background-image: url("../images/dmclogo.png");
+                background-size: 100%;
+                background-repeat: no-repeat;
+                background-color: inherit;
+                display: inline-block;
+                height: 80px;
+                width: 250px;
+                text-indent: -99999px;
+                opacity: 0.8;
+                padding: 0px;
+                margin: 0px;
+            }
+
+            header .logo a:hover{
+                text-decoration: none;
+                background-color: transparent;
+                opacity: 1;
+            }
+
+            .secondHeader {
+                background-color: rgb(45, 0, 0);
+                height: 100px;
+                width: 100%;
+                font-size: 40px;
+                text-transform: uppercase;
+                display:inline-block;
+                line-height: 140px;
+                text-align: center;
+                color: rgb(160,100,100);
+                text-shadow: 5px 5px 5px rgb(255, 0, 0);
+            }
+
+            /* header nav bar */
+            nav {
+                background-color: rgb(0, 0, 0);
+                width: 100%;
+                font-size: 65px;
+                padding: 0px;
+                margin: 0px;
+                display:inline-block;
+            }
+
+            /* lists */
+            nav ul {
+                margin: 5px;
+                padding: 0;
+                list-style-type: none;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+            }
+
+            nav li {
+                line-height: 80px;
+                vertical-align: middle;
+                display: flex;
+            }
+
+            nav li:first-child {
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+
+            nav li:nth-child(2) {
+                margin-right: 50px;
+                margin-left: 70px;
+            }
+
+            nav li:nth-child(3) {
+                margin-left: 50px;
+            }
+
+            /* hyperlinks */
+            a {
+                text-decoration: none;
+                color:inherit;
+            }
+
+            a:active {
+                text-decoration: none;
+            }
+
+            a:hover {
+                text-decoration: overline rgb(160, 100, 100) 5px;
+                background-color: rgb(100, 0, 0);
+                color: black;
+            }
+
+
+            /* page content */
+            section {   
+                color: gray;
+                padding: 0px;
+            }
+
+            /* scrolling text bar */
+            .scrolling_text {
+                width: 100%;
+                background-color: rgb(66, 0, 0);
+                overflow: hidden;
+                display: flex;
+                white-space: nowrap;
+                height: 30px;
+            }
+
+            .text {
+                font-size: 25px;
+                font-weight: 700;
+                text-transform: uppercase;
+                color: rgb(0, 0, 0);
+                animation: horizontal_scroll_text 120s linear infinite;
+                display:inline-block;
+                line-height: 30px;
+                vertical-align: middle;
+            }
+
+            .text span {
+                margin: 0 500px;
+            }
+
+            /* buttons */
+            button {
+                border: none;
+                color: rgb(160, 100, 100);
+                background-color: black;
+                margin: 0;
+                padding: 0;
+                width: 150px;
+                height: 20px;
+            }
+
+            .buttonHell{
+                width: 100%;
+                height: 200px;
+                text-align: center;
+                margin: 0px;
+                padding: 0px;
+            }
+
+            /* feature-boxes */
+            .feature-box.images {
+                padding: 20px;
+                margin: 0px;
+                display: flex;
+                flex-direction: row;
+                background-color: rgb(45, 0, 0);
+            }
+
+            .feature-box.images figure {
+                width: 100px;
+                margin: auto;
+                text-align: center;
+            }
+
+            .feature-box.images img {
+                border: 1px solid rgb(160, 100, 100);
+                border-radius: 25px;
+                width: 100px;
+                box-shadow: rgb(160, 100, 100) 0px 0px 5px;
+            }
+
+            .feature-box.links {    
+                display: flex;
+                flex-direction: column;
+                color: inherit;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                padding: 100px;
+            }
+
+            .feature-box.links::before {
+                content: "";
+                background-image: url("../images/dmc1castlebackground.webp");
+                background-size: cover;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                opacity: 0.4;
+            }
+
+            .feature-box.links button {
+                font-family: inherit;
+                width: 40%;
+                height: 75px;
+                margin: auto;
+                margin-bottom: 25px;
+                background-color: rgb(0, 0, 0);
+                color: inherit;
+                border-style: solid;
+                border-radius: 5px;
+                border-width: 4px;
+                transition-duration: 0.4s;
+                font-size: 30px;
+                position: relative;
+            }
+
+            .feature-box.links button:hover{ 
+                background-color: rgb(66, 0, 0);
+                color: black;
+                border-color: rgb(160, 100, 100);
+                border-style: solid;
+            }
+
+            .feature-box.links img {
+                margin: 20px;
+                width: 50px;
+                height: 50px;
+            }
+            
+            .feature-box.links a{
+                width: 100%;
+                height: 100%;
+            }
+
+            .feature-box.ritualguide {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                margin: 0px;
+            }
+
+            /* summoning page */
+            .feature-box.ritualguide .ritualinfo {
+                background-image: url("../images/dmc1background.jfif");
+                background-size: 50%;
+                background-color: black;    
+                background-repeat: no-repeat;
+                background-position: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                margin: 0px;
+                flex-wrap: wrap;
+            }
+
+            .ritualtext1, .ritualtext2 {
+                width: 400px;
+                height: 700px;
+                font-size: 20px;
+                line-height: 35px;
+                position: relative;
+                top: 50%;
+                transform : translateY(10%);
+            }
+
+            .ritualtext1 {
+                text-align: left;
+            }
+
+            .ritualTextGap {
+                width: 650px;
+                text-align: center;
+            }
+
+            .ritualtext2 {
+                text-align: right;
+            }
+
+            .theritual {
+                width: 100%;
+                text-align: center;
+                padding-top: 50px;
+                background-color: black;
+                font-size: 25px;
+                display: flex;
+                height: 500px;
+                flex-direction: column;
+            }
+
+
+
+            .theritual input {
+                background-image: url(../images/sigil.png);
+                background-size: 15%;
+                background-repeat: no-repeat;
+                background-position-y: 50%;
+                background-position-x: 2px;
+                padding-left: 35px;
+                line-height: 50px;
+                height: 30px;
+                vertical-align: middle;
+                font-family: inherit;
+                width: 150px;
+                background-color: rgb(66, 0, 0);
+                border: 2px solid rgb(200, 0, 0);
+                font-size: 15px;
+            }
+
+            .theritual input:focus {
+                border: 2px solid rgb(160, 100, 100);
+            }
+            /* witness images/scroll bar*/ 
+            .feature-box.witness {
+                margin: 10px 60px 40px 60px;
+            }
+
+            div.scroll-container {
+                background-color: #000000;
+                overflow: auto;
+                white-space: nowrap;
+                padding: 10px;  
+                display: flex;
+                flex-direction: row;
+                height: 600px;
+                border-radius: 10px;
+                border-color: rgb(66, 0, 0);
+                border-width: 5px;
+                border-style: solid;
+            }
+
+            div.scroll-container img {
+                padding: 10px;
+                width: auto;
+                height: auto;
+              }
+
+            ::-webkit-scrollbar{
+                height: 4px;
+                width: 4px;
+                background: rgb(0, 0, 0);
+              }
+
+            ::-webkit-scrollbar-thumb:horizontal{
+                background: #ff0000;
+                border-radius: 10px;
+            }
+
+
+            footer {
+                background: black;
+                padding: 20px 20px;
+                font-size: 12px;
+                margin: 0px;
+            }
+
+            /* animations */
+            /* scrolling text */
+            @keyframes horizontal_scroll_text {
+                from {
+                    transform: translate3d(0, 0, 0);
+                }
+                to {
+                    transform: translate3d(-100%, 0, 0);    
+                }
+
+            }
+
+            /* horizontal flip */ 
+            .flipY {
+                animation-name: spin, depth;
+                animation-timing-function: linear;
+                animation-iteration-count: infinite;
+                animation-duration: 3s;
+              }
+              @keyframes spin {
+                0% {
+                  transform: rotateY(0deg);
+                }
+                100% {
+                  transform: rotateY(-360deg);
+                }
+              }
+              @keyframes depth {
+                0% {
+                  text-shadow: 0 0 black;
+                }
+                25% {
+                  text-shadow: 1px 0 black, 2px 0 black, 3px 0 black, 4px 0 black, 5px 0 black;
+                }
+                50% {
+                  text-shadow: 0 0 black;
+                }
+                75% {
+                  text-shadow: -1px 0 black, -2px 0 black, -3px 0 black, -4px 0 black,
+                    -5px 0 black;
+                }
+                100% {
+                  text-shadow: 0 0 black;
+                }
+              }
+            
+            /* RESPONSIVE RULES */ 
+            @media screen and (max-width: 900px) {
+                nav li {
+                    font-size: 36px;
+                    height: 40px;
+                    line-height: 40px;
+                }
+
+                header .logo a{
+                    height: 40px;
+                    width: 125px;
+                    vertical-align: middle;
+                    line-height: 40px;
+                }      
+
+                .feature-box.links button {
+                    width: 70%;
+                    font-size: 26px;
+                }
+
+                div.scroll-container {
+                    height: 300px;
+                }
+
+            }
+
+            @media screen and (max-width: 800px) {
+                .scrolling_text {
+                    line-height: 30px;
+                }
+
+                .text {
+                    font-size: 16px;
+                }
+            }
+
+            @media screen and (max-width: 700px) {
+                nav li {
+                    font-size: 32px;
+                    height: 40px;
+                    line-height: 40px;
+                }    
+
+                .secondHeader {
+                    font-size: 28px;
+                }
+            }
